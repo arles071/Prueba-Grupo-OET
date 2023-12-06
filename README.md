@@ -2,6 +2,12 @@
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## Requisitos
+Se describe a continuación la versión de php, laravel y composer que se realizo el backend
+* Versión php 8.1.6
+* Versión laravel 9.19
+* Composer version 1.10.26
+
 ## Instalación de aplicación web
 Crear la base de datos en mysql de nombre "acme"
 
@@ -24,15 +30,15 @@ https://github.com/arles071/Prueba-Grupo-OET-Front-Angular.git
 Descargar el proyecto de angular e ingresar a la raiz del proyecto, una vez en 
 esta ruta ejecutar los siguientes comandos:
 
-npm install  => Este comando instala todas las dependencias de angular
-ng serve => inicializa el proyecto de angular en la ruta localhost:4200
+* npm install  => Este comando instala todas las dependencias de angular
+* ng serve => inicializa el proyecto de angular en la ruta localhost:4200
 
 ## Pasos que tuve encuenta para realizar la prueba
 De acuerdo al requerimiento de registro de vehículos se realizo un formulario para almacenar los datos del vehículo junto a la información del conductor y propietario, tambien cuando se escribe el documento se realiza una consulta a base de datos para validar la existencia del conductor o propietario que esta ingresando para el vehículo a registrar en caso de que el usuario exista los campos se llenan automaticamente y solamente se actualiza la informacion del propietario o conductor.
 
 Tambien se habilito una ruta de nombre personas donde solamente se peude editar la persona.
 
-## Paso en angular
+## Pasos en angular
 * En este proyecto destaco el uso de interceptor para enviar el toque por cabecera y realizar un efecto de carga por cada petición.
 * Para la creación de vehículos y personas se utiliza un modal de bootstrap al cual se le pasa información desde el componente padre al componente que se encarga de abrir el modal y de la misma manera el componente padre esta a la escucha para detectar cuando el modal se cierra. Este modal fue reutilizado para crear y actualizar un vehículo.
 * Se realizo un login
