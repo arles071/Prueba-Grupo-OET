@@ -2,16 +2,24 @@
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Requisitos
+## Requisitos laravel
 Se describe a continuación la versión de php, laravel y composer que se realizo el backend
 * Versión php 8.1.6
 * Versión laravel 9.19
 * Composer version 1.10.26
 
+## Requisitos Angular
+Se describe a continuación la versión de angular y node.js que se realizo en el frontend
+* Versión angular 16.1.0
+* Versión node v20.9.0
+
 ## Instalación de aplicación web
 Crear la base de datos en mysql de nombre "acme"
 
 Una vez descargado la pagina ubicarce dentro del proyecto con un editor de codigo abrir el archivo .env y agregar en el archivo .env el nombre de la base de datos.
+
+- Nota:
+* Tener encuenta que si la base de datos la importa manual el comando de "php artisan migrate" y los seeder no se ejecutan
 
 Ejecutar los siguientes comandos:
 
